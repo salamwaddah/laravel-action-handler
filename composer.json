@@ -1,0 +1,39 @@
+{
+  "name": "salamwaddah/laravel-action-handler",
+  "description": "TODO",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "dispatch now",
+    "dispatch now alternative",
+    "handle",
+    "handle class"
+  ],
+  "support": {
+    "issues": "https://github.com/salamwaddah/laravel-action-handler/issues",
+    "source": "https://github.com/salamwaddah/laravel-action-handler"
+  },
+  "authors": [
+    {
+      "name": "Salam Waddah",
+      "email": "salamwaddah@gmail.com",
+      "homepage": "https://salamwaddah.com/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "require": {
+    "php": ">=7.3",
+    "illuminate/container": "8.*"
+  },
+  "minimum-stability": "stable",
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "version": "0.0.0"
+}
