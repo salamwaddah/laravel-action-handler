@@ -29,11 +29,20 @@
 	},
 	"require": {
 		"php": ">=7.3",
-		"illuminate/container": "8.*"
+		"illuminate/container": "8.*",
+		"hellochef-me/php-styles": "^1.0"
 	},
 	"minimum-stability": "stable",
 	"scripts": {
-		"test": "vendor/bin/phpunit"
+		"test": "vendor/bin/phpunit",
+		"post-update-cmd": [
+			"cp vendor/hellochef-me/php-styles/pre-commit .git/hooks/pre-commit",
+			"chmod a+x .git/hooks/pre-commit"
+		],
+		"post-install-cmd": [
+			"cp vendor/hellochef-me/php-styles/pre-commit .git/hooks/pre-commit",
+			"chmod a+x .git/hooks/pre-commit"
+		]
 	},
 	"version": "0.0.1"
 }
